@@ -25,5 +25,5 @@ jobs:
             npm install
             npm run build
             pm2 serve build
-            mv -r build /var/www/html/build
+            sudo mv build /var/www/html/build
 
