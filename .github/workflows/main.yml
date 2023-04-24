@@ -38,6 +38,10 @@ jobs:
                         root /var/www/html/build;
                         try_files $uri /index.html;
                       }
+                      # server reverser proxy
+                      location /api/ {
+                        proxy_pass http://localhost:5000/posts;
+                      }
                     }" >> new
 
 
