@@ -18,11 +18,7 @@ jobs:
           key: ${{secrets.SSH_KEY}}
           username: ${{ secrets.AWS_USERNAME }}
           script: |
-            sudo apt-get update
-            sudo apt-get install nginx -y
-            git clone https://github.com/ufas-001/memories-client-instace-demo.git
             cd memories-client-instace-demo
             npm install
             npm run build
             npm install -g pm2
-            
