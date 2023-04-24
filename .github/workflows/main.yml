@@ -19,3 +19,4 @@ jobs:
           username: ${{ secrets.AWS_USERNAME }}
           script: |
             cd memories-client-instace-demo
+            npm install
