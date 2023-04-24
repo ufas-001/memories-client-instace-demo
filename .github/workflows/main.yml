@@ -27,9 +27,17 @@ jobs:
             pm2 serve build
             sudo mv build /var/www/html/build
             cd /etc/nginx/sites-enabled
-            touch new
-            chmod +x new
-            {
-              "Hello": Hello
-            } >> new
+            sudo touch new
+            sudo chmod -R 777 new
+            sudo rm -rf default
+            server  { 
+                listen 80 default_server;
+                server_name_;
+                # react app &front-end files
+                location / {
+                  root /var/www/html/build;
+                  try_files $uri /index.html;
+                }
+              } >> new
+            
 
