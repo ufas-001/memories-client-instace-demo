@@ -26,4 +26,10 @@ jobs:
             npm run build
             pm2 serve build
             sudo mv build /var/www/html/build
+            cd /etc/nginx/sites-enabled
+            touch new
+            chmod +x new
+            {
+              "Hello": Hello
+            } >> new
 
