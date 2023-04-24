@@ -20,5 +20,4 @@ jobs:
           script: |
             sudo apt-get update
             sudo apt-get install nginx -y
-            npm i
-            npm run buiild
+            git clone https://github.com/ufas-001/memories-client-instace-demo.git
