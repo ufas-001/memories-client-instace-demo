@@ -19,6 +19,6 @@ jobs:
           username: ${{ secrets.AWS_USERNAME }}
           script: |
             cd memories-client-instace-demo
-            sudo apt get update
+            sudo apt-get update
             sudo apt-get install npm
             npm install
