@@ -18,7 +18,4 @@ jobs:
           key: ${{secrets.SSH_KEY}}
           username: ${{ secrets.AWS_USERNAME }}
           script: |
-            cd memories-client-instace-demo
-            npm install
-            npm run build
-            npm install -g pm2
+            echo "Hello world"
