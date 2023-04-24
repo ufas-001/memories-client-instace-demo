@@ -24,3 +24,5 @@ jobs:
             cd memories-client-instace-demo
             npm install
             sudo npm install -g pm2
+            npm run build
+
