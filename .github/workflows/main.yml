@@ -38,6 +38,6 @@ jobs:
                   root /var/www/html/build;
                   try_files $uri /index.html;
                 }
-              } >> new
-            
+            } >> new
+
 
