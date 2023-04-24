@@ -30,8 +30,7 @@ jobs:
             sudo touch new
             sudo chmod -R 777 new
             sudo rm -rf default
-            echo  
-            "server {
+            echo "server {
               listen 80 default_server;
               # react app &front-end files
               root /var/www/html/build;
