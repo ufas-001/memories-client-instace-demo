@@ -20,5 +20,5 @@ jobs:
           script: |
             cd memories-client-instace-demo
             sudo apt-get update
-            sudo apt-get install npm
+            sudo apt-get install -g npm -y
             npm install
