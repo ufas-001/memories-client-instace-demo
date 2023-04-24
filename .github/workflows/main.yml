@@ -21,4 +21,6 @@ jobs:
             cd memories-client-instace-demo
             sudo apt-get update
             sudo apt-get install npm -y
+            cd memories-client-instace-demo
             npm install
+            npm install -g pm2
