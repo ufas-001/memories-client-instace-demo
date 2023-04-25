@@ -18,28 +18,28 @@ jobs:
           key: ${{secrets.SSH_KEY}}
           username: ${{ secrets.AWS_USERNAME }}
           script: |
-            cd memories-client-instace-demo
-            sudo apt-get update
-            sudo apt-get install npm -y
-            cd memories-client-instace-demo
-            npm install
-            npm run build
-            pm2 serve build
-            sudo mv build /var/www/html/build
-            cd /etc/nginx/sites-enabled
-            sudo touch new
-            sudo chmod -R 777 new
-            sudo rm -rf default
-            echo "server {
-              listen 80 default_server;
-              # react app &front-end files
-              root /var/www/html/build;
-              # Add index.php to the list if you are using PHP
-              index index.html index.htm index.nginx-debian.html;
-              server_name _;
-              location /api/ {
-                proxy_pass http://localhost:5000/posts;
-              }
-            }" >> new
+            # cd memories-client-instace-demo
+            # sudo apt-get update
+            # sudo apt-get install npm -y
+            # cd memories-client-instace-demo
+            # npm install
+            # npm run build
+            # pm2 serve build
+            # sudo mv build /var/www/html/build
+            # cd /etc/nginx/sites-enabled
+            # sudo touch new
+            # sudo chmod -R 777 new
+            # sudo rm -rf default
+            # echo "server {
+            #   listen 80 default_server;
+            #   # react app &front-end files
+            #   root /var/www/html/build;
+            #   # Add index.php to the list if you are using PHP
+            #   index index.html index.htm index.nginx-debian.html;
+            #   server_name _;
+            #   location /api/ {
+            #     proxy_pass http://localhost:5000/posts;
+            #   }
+            # }" >> new
 
 
